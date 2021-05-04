@@ -1,0 +1,6 @@
+name: PaintingGun
+version: 1.0
+main: rotang.PaintingGun.PaintingGun
+
+commands:
+  pg:
