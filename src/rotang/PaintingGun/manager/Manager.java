@@ -1,5 +1,8 @@
 package rotang.PaintingGun.manager;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -36,6 +39,8 @@ public class Manager
 	{
 		ItemStack gun = new ItemStack(Material.BLAZE_ROD);
 		ItemMeta meta = gun.getItemMeta();
+		List<String> lore = Arrays.asList("왼손에 원하는 콘크리트를 들고 우클릭 시", "바닥에 페인트를 발사합니다.");
+		meta.setLore(lore);
 		meta.setDisplayName(ChatColor.GOLD + "Brush");
 		gun.setItemMeta(meta);
 		
