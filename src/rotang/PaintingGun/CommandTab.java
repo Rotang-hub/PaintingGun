@@ -20,7 +20,7 @@ public class CommandTab implements TabCompleter
 		{
 			for(String a : arguments)
 			{
-				if(args[0].toLowerCase().startsWith(a.toLowerCase()))
+				if(a.toLowerCase().startsWith(args[0].toLowerCase()))
 				{
 					result.add(a);
 				}
